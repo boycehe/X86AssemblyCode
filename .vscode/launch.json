@@ -3,7 +3,7 @@
     "configurations": [
     {
         "type": "cppdbg",
-        "name": "build nasm assembly code",
+        "name": "Run bochs",
         "cwd": "${workspaceFolder}",
         "request": "launch",
         "preLaunchTask": "nasm"

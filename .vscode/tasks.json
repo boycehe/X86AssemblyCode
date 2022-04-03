@@ -6,19 +6,27 @@
         "type": "shell",
         "command": "./build.sh",
         "args": [
-          "-r",
-          "${workspaceFolder}",
+          "c13_app0.asm", 
+          "c13_core0.asm" 
         ],
-        "problemMatcher": {
-          "fileLocation": [
-            "relative",
-            "${workspaceFolder}"
-          ],
-        },
+        "group": {
+          "kind": "build",
+          "isDefault": false 
+        }
+      },
+      {
+        "label": "run_bochs",
+        "type": "shell",
+        "command": "./runbochs.sh",
+        "args": [
+          "0","c13_app0",
+          "1","c13_core0"
+        ],
         "group": {
           "kind": "build",
           "isDefault": true
         }
+
       }
     ]
   }

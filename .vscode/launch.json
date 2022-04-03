@@ -1,0 +1,12 @@
+{
+    "version":"0.2.0", 
+    "configurations": [
+    {
+        "type": "cppdbg",
+        "name": "build nasm assembly code",
+        "cwd": "${workspaceFolder}",
+        "request": "launch",
+        "preLaunchTask": "nasm"
+    }
+    ]
+}

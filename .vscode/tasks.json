@@ -4,7 +4,7 @@
       {
         "label": "build",
         "type": "shell",
-        "command": "./build.sh",
+        "command": "./tools/build.sh",
         "args": [
           "c13_mbr0.asm",
           "c13_core0.asm",
@@ -18,7 +18,7 @@
       {
         "label": "run_bochs",
         "type": "shell",
-        "command": "./runbochs.sh",
+        "command": "./tools/runbochs.sh",
         "dependsOn":[
           "build"
         ],
@@ -29,7 +29,7 @@
         ],
         "group": {
           "kind": "build",
-          "isDefault": true
+          "isDefault": true 
         }
 
       }

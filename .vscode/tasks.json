@@ -6,8 +6,9 @@
         "type": "shell",
         "command": "./build.sh",
         "args": [
+          "c13_mbr0.asm",
+          "c13_core0.asm",
           "c13_app0.asm", 
-          "c13_core0.asm" 
         ],
         "group": {
           "kind": "build",
@@ -18,9 +19,13 @@
         "label": "run_bochs",
         "type": "shell",
         "command": "./runbochs.sh",
+        "dependsOn":[
+          "build"
+        ],
         "args": [
-          "0","c13_app0",
-          "1","c13_core0"
+          "0","c13_mbr0",
+          "1","c13_core0",
+          "50","c13_app0"
         ],
         "group": {
           "kind": "build",

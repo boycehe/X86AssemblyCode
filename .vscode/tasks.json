@@ -6,9 +6,7 @@
         "type": "shell",
         "command": "./tools/build.sh",
         "args": [
-          "c13_mbr0.asm",
-          "c13_core0.asm",
-          "c13_app0.asm", 
+          "c11_mbr0.asm"
         ],
         "group": {
           "kind": "build",
@@ -23,9 +21,7 @@
           "build"
         ],
         "args": [
-          "0","c13_mbr0",
-          "1","c13_core0",
-          "50","c13_app0"
+          "0","c11_mbr0"
         ],
         "group": {
           "kind": "build",
